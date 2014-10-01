@@ -7,6 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
     </head>
@@ -25,6 +26,15 @@
           var editor = ace.edit("editor");
           editor.setTheme("ace/theme/solarized_dark");
           editor.getSession().setMode("ace/mode/javascript");
+
+          editor.getSession().on('change', function(e) {
+            try {
+              console.log(JSON.stringify(acorn.parse(editor.getValue()), null, 2));
+            }
+            catch (err) {
+              
+            }
+          });
         </script>
         <script src="js/main.js"></script>
     </body>

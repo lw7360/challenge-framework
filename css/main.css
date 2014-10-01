@@ -1,6 +1,10 @@
 body {
   overflow: hidden;
 }
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+}
     
 #editor { 
   margin: 0;
