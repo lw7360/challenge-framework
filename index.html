@@ -14,14 +14,14 @@
     <body>
     <div class="container">
       <div class="row">
-        <div class="col-xs-12">
+        <div class="col-md-12">
           <h1 class="title">JS Challenge Framework</h1>
         </div>
       </div>
       <hr>
 
       <div class="row">
-        <div class="col-xs-3">
+        <div class="col-md-3">
           <h3 id="success">Keep on trucking...</h3>
           <div id="allStatus">
             <div class="panel panel-default">
@@ -41,18 +41,18 @@
             </div>
           </div>
         </div>
-        <div class="col-xs-9">
+        <div class="col-md-9">
           <pre id="editor" class="well">// Why hello there!
 // To complete this challenge...
 for (var i = 1; i < 10; i++) {
   // Delete this while loop...
   while (i > 0) {
-    console.log(i);  
+    console.log(i--);
   }
 
   // And uncomment this if statement!
-  // if (i > 0)  console.log(i);
-  
+  // if (i > 0) console.log(i);
+
 }</pre>
 
 <hr>
@@ -67,7 +67,7 @@ Set Whitelist requirements with...
 }</pre>
 </p>
 <p class="lead">
-You can also set Blacklist requirements similarly with...
+You can set Blacklist requirements similarly with...
 <pre>challenge.blacklist = {
   // Requirement : Description,
   "WhileStatement" : "Don't use a while loop"
@@ -77,7 +77,7 @@ You can also set Blacklist requirements similarly with...
 <p class="lead">
 Setting Structure requirements are a little bit different...
 <pre>challenge.struct = {
-  // Description : Structure
+  // Description : {Structure : null}
   "'for loop' and inside of it 'if statement'." : {
     "ForStatement" : {
       "IfStatement" : null
