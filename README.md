@@ -14,9 +14,34 @@ Some other factors. Acorn has support for ECMAScript 4, 5, and 6. Esprima just 5
 
 #2. Browser Support.
 
-I tested Firefox, Chrome, and Safari on my own Mac Book Pro, and everything seemed to work fine. I used BrowserStack to test IE, and it also seemed to be in working condition.
+I tested Firefox, Chrome, and Safari on my own Mac Book Pro, and everything seemed to work fine. I used BrowserStack to test IE, and everything still seemed to be in working order.
 
 #3. API.
+
+Set Whitelist requirements with...
+
+    challenge.whitelist = {
+      // Requirement : Description,
+      "ForStatement" : "Use a for loop",
+      "VariableDeclaration" : "Declare a variable"
+    }
+
+You can set Blacklist requirements similarly with...
+
+    challenge.blacklist = {
+      // Requirement : Description,
+      "WhileStatement" : "Don't use a while loop"
+    }
+Setting Structure requirements are a little bit different...
+
+    challenge.struct = {
+      // Description : {Structure : null}
+      "'for loop' and inside of it 'if statement'." : {
+        "ForStatement" : {
+          "IfStatement" : null
+        }
+      }
+    };
 
 #4. Text editor
 I used Ace. It's very pretty.
