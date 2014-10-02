@@ -14,15 +14,61 @@
     <body>
     <div class="container">
       <div class="row">
-        <div class="col-xs-12">
+        <div class="col-md-12">
           <h1 class="title">JS Challenge Framework</h1>
         </div>
       </div>
       <hr>
 
       <div class="row">
-        <div class="col-xs-3">
-          <h3 id="success">Keep on trucking...</h3>
+        <div class="col-md-9">
+          <div id="editor" class="well">// Why hello there!
+for (var i = 1; i < 10; i++) {
+  // Delete this while loop...
+  while (i > 0) {
+    console.log(i);  
+  }
+
+  // And uncomment this if statement!
+  // if (i > 0)  console.log(i);
+  
+}</div>
+
+<p class="lead">Add more requirements!</p>
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+  <li class="active"><a href="#whitelist" role="tab" data-toggle="tab">Whitelist</a></li>
+  <li><a href="#blacklist" role="tab" data-toggle="tab">Blacklist</a></li>
+  <li><a href="#structure" role="tab" data-toggle="tab">Structure</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane active" id="whitelist">
+<form role="form">
+  <div class="form-group">
+    <label>Description:</label> Describe the requirement.
+    <input type="text" class="form-control" id="wlDescription" placeholder="i.e. Use a for loop">
+  </div>
+  <div class="form-group">
+    <label>Functionality:</label> Specify the functionality with a helpful tip.
+    <input type="password" class="form-control" id="wlFunctionality" placeholder="i.e. ForStatement">
+  </div>
+  <button type="submit" class="btn btn-default">Add to Whitelist</button>
+</form>
+  </div>
+  <div class="tab-pane active" id="blacklist">
+  </div>
+  <div class="tab-pane active" id="structure">
+  </div>
+</div>
+<hr>
+
+        </div>
+        <div class="col-md-3">
+          <h3 id="success">
+          </h3>
           <div id="allStatus">
             <div class="panel panel-default">
               <div class="panel-heading">Whitelist</div>
@@ -40,55 +86,6 @@
               </ul>
             </div>
           </div>
-        </div>
-        <div class="col-xs-9">
-          <div id="editor" class="well">// Why hello there!
-// To complete this challenge...
-for (var i = 1; i < 10; i++) {
-  // Delete this while loop...
-  while (i > 0) {
-    console.log(i);  
-  }
-
-  // And uncomment this if statement!
-  // if (i > 0)  console.log(i);
-  
-}</div>
-
-<hr>
-
-<h2>Add more requirements!</h2>
-<p class="lead">
-Set Whitelist requirements with...
-<pre>challenge.whitelist = {
-  // Requirement : Description,
-  "ForStatement" : "Use a for loop",
-  "VariableDeclaration" : "Declare a variable"
-}</pre>
-</p>
-<p class="lead">
-You can also set Blacklist requirements similarly with...
-<pre>challenge.blacklist = {
-  // Requirement : Description,
-  "WhileStatement" : "Don't use a while loop"
-}
-</pre>
-</p>
-<p class="lead">
-Setting Structure requirements are a little bit different...
-<pre>challenge.struct = {
-  // Description : Structure
-  "'for loop' and inside of it 'if statement'." : {
-    "ForStatement" : {
-      "IfStatement" : null
-    }
-  }
-};
-</pre>
-</p>
-<p class="lead">
-Be sure to run <code>dispChallenge()</code> to see your updates!
-</p>
         </div>
       </div>
 </div>

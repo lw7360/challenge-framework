@@ -2,16 +2,28 @@ body {
   overflow: hidden;
 }
 
-h1 {
+.title{
+  text-align: center;
   font-family: 'Raleway', sans-serif;
 }
-    
+
 #editor { 
-  margin: 0;
-  position: absolute;
+  margin: 5px;
   height: 200px;
-  top: 100px;
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+nav a {
+  color: grey;
+}
+
+#success {
+  text-align: center;
+  margin-top: -10px;
+}
+
+.nav-tabs {
+  margin-bottom: 10px;
 }
