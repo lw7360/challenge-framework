@@ -68,7 +68,9 @@ var dispChallenge = function() {
 }
 
 editor.getSession().on('change', function(e) {
-  dispChallenge();
+  setTimeout(function() {
+    dispChallenge();
+  }, 0);
 });
 
 dispChallenge();
