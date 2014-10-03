@@ -53,7 +53,7 @@ var dispChallenge = function() {
         }
 
         if (success) {
-            $("#success").html('<a target="_blank" href="http://i.imgur.com/w3PEgSw.gif">You did it!</a>');
+            $("#success").html('<a target="_blank" href="http://i.imgur.com/w3PEgSw.gif">You did it!!!!</a>');
         } else {
             $("#success").html('Keep on trucking...');
         }
