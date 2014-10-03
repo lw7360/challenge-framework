@@ -61,4 +61,4 @@ After setting some requirements, call `challenge.parse(code)`  where `code` is t
 I used Ace. It's very pretty.
 
 #5. Not blocking.
-Ace has an `onchange` event, which is what I listened for to begin running the tests. I wrapped everything in a try...catch statement so Acorn parsing errors don't prevent the user from typing. I also used setTimeout(..., 0), to make sure that running the tests won't block I/O.
+Ace has an `onchange` event, which is what I listened for to begin running the tests. I wrapped everything in a try...catch statement so Acorn parsing errors wouldn't prevent the user from typing. I also used setTimeout(..., 0), to make sure that running the tests won't block I/O.
