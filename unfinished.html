@@ -1,17 +1,16 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>JS Challenge Framework</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JS Challenge Framework</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -19,52 +18,46 @@
         </div>
       </div>
       <hr>
-
       <div class="row">
         <div class="col-md-9">
           <div id="editor" class="well">// Why hello there!
-for (var i = 1; i < 10; i++) {
-  // Delete this while loop...
-  while (i > 0) {
-    console.log(i);  
-  }
-
-  // And uncomment this if statement!
-  // if (i > 0)  console.log(i);
-  
-}</div>
-
-<p class="lead">Add more requirements!</p>
-
-<!-- Nav tabs -->
-<ul class="nav nav-tabs" role="tablist">
-  <li class="active"><a href="#whitelist" role="tab" data-toggle="tab">Whitelist</a></li>
-  <li><a href="#blacklist" role="tab" data-toggle="tab">Blacklist</a></li>
-  <li><a href="#structure" role="tab" data-toggle="tab">Structure</a></li>
-</ul>
-
-<!-- Tab panes -->
-<div class="tab-content">
-  <div class="tab-pane active" id="whitelist">
-<form role="form">
-  <div class="form-group">
-    <label>Description:</label> Describe the requirement.
-    <input type="text" class="form-control" id="wlDescription" placeholder="i.e. Use a for loop">
-  </div>
-  <div class="form-group">
-    <label>Functionality:</label> Specify the functionality with a helpful tip.
-    <input type="password" class="form-control" id="wlFunctionality" placeholder="i.e. ForStatement">
-  </div>
-  <button type="submit" class="btn btn-default">Add to Whitelist</button>
-</form>
-  </div>
-  <div class="tab-pane active" id="blacklist">
-  </div>
-  <div class="tab-pane active" id="structure">
-  </div>
-</div>
-<hr>
-
+            for (var i = 1; i < 10; i++) {
+            // Delete this while loop...
+            while (i > 0) {
+            console.log(i);
+            }
+            // And uncomment this if statement!
+            // if (i > 0)  console.log(i);
+            }
+          </div>
+          <p class="lead">Add more requirements!</p>
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="active"><a href="#whitelist" role="tab" data-toggle="tab">Whitelist</a></li>
+            <li><a href="#blacklist" role="tab" data-toggle="tab">Blacklist</a></li>
+            <li><a href="#structure" role="tab" data-toggle="tab">Structure</a></li>
+          </ul>
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div class="tab-pane active" id="whitelist">
+              <form role="form">
+                <div class="form-group">
+                  <label>Description:</label> Describe the requirement.
+                  <input type="text" class="form-control" id="wlDescription" placeholder="i.e. Use a for loop">
+                </div>
+                <div class="form-group">
+                  <label>Functionality:</label> Specify the functionality with a helpful tip.
+                  <input type="password" class="form-control" id="wlFunctionality" placeholder="i.e. ForStatement">
+                </div>
+                <button type="submit" class="btn btn-default">Add to Whitelist</button>
+              </form>
+            </div>
+            <div class="tab-pane active" id="blacklist">
+            </div>
+            <div class="tab-pane active" id="structure">
+            </div>
+          </div>
+          <hr>
         </div>
         <div class="col-md-3">
           <h3 id="success">
@@ -88,14 +81,13 @@ for (var i = 1; i < 10; i++) {
           </div>
         </div>
       </div>
-</div>
-
-        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-        <script src="js/libs/acorn.js"></script>
-        <script src="js/libs/walk.js"></script>
-        <script src="js/libs/ace/ace.js"></script>
-        <script src="js/challenge.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+    </div>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="js/libs/acorn.js"></script>
+    <script src="js/libs/walk.js"></script>
+    <script src="js/libs/ace/ace.js"></script>
+    <script src="js/challenge.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

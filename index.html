@@ -1,17 +1,16 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>JS Challenge Framework</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JS Challenge Framework</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -19,7 +18,6 @@
         </div>
       </div>
       <hr>
-
       <div class="row">
         <div class="col-md-3">
           <h3 id="success">Keep on trucking...</h3>
@@ -52,31 +50,28 @@ for (var i = 1; i < 10; i++) {
 
   // And uncomment this if statement!
   // if (i > 0) console.log(i);
-
 }</pre>
-
-<hr>
-
-<h2>Add more requirements!</h2>
-<p class="lead">
-Set Whitelist requirements with...
-<pre>challenge.whitelist = {
+          <hr>
+          <h2>Add more requirements!</h2>
+          <p class="lead">
+            Set Whitelist requirements with...
+          <pre>challenge.whitelist = {
   // Requirement : Description,
   "ForStatement" : "Use a for loop",
   "VariableDeclaration" : "Declare a variable"
 }</pre>
-</p>
-<p class="lead">
-You can set Blacklist requirements similarly with...
-<pre>challenge.blacklist = {
+          </p>
+          <p class="lead">
+            You can set Blacklist requirements similarly with...
+          <pre>challenge.blacklist = {
   // Requirement : Description,
   "WhileStatement" : "Don't use a while loop"
 }
 </pre>
-</p>
-<p class="lead">
-Setting Structure requirements are a little bit different...
-<pre>challenge.struct = {
+          </p>
+          <p class="lead">
+            Setting Structure requirements are a little bit different...
+          <pre>challenge.struct = {
   // Description : {Structure : null}
   "'for loop' and inside of it 'if statement'." : {
     "ForStatement" : {
@@ -85,20 +80,19 @@ Setting Structure requirements are a little bit different...
   }
 };
 </pre>
-</p>
-<p class="lead">
-Be sure to run <code>dispChallenge()</code> to see your updates!
-</p>
+          </p>
+          <p class="lead">
+            Be sure to run <code>dispChallenge()</code> to see your updates!
+          </p>
         </div>
       </div>
-</div>
-
-        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-        <script src="js/libs/acorn.js"></script>
-        <script src="js/libs/walk.js"></script>
-        <script src="js/libs/ace/ace.js"></script>
-        <script src="js/challenge.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+    </div>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="js/libs/acorn.js"></script>
+    <script src="js/libs/walk.js"></script>
+    <script src="js/libs/ace/ace.js"></script>
+    <script src="js/challenge.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
